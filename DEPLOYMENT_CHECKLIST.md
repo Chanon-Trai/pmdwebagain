@@ -33,13 +33,16 @@ Choose one platform:
 
 ## 🎨 Step 2: Deploy Frontend to Vercel
 
-### Using Vercel CLI
+> **Proxy/GitHub Issues?** See `DEPLOY_WITHOUT_GITHUB.md` for direct deployment without GitHub!
+
+### Using Vercel CLI (Works Without GitHub!)
 - [ ] Install: `npm install -g vercel`
 - [ ] Login: `vercel login`
 - [ ] Deploy: `vercel` (then `vercel --prod`)
 - [ ] Set environment variable: `NEXT_PUBLIC_API_URL` = your backend URL
+- [ ] **No GitHub needed!** This uploads directly from your local folder.
 
-### Using Vercel Dashboard
+### Using Vercel Dashboard (Requires GitHub)
 - [ ] Go to [vercel.com](https://vercel.com)
 - [ ] Import GitHub repository
 - [ ] Framework: Next.js (auto-detected)

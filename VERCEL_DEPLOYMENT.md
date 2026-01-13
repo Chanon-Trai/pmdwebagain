@@ -52,7 +52,9 @@ Make sure your production database has the schema:
 
 ## Step 3: Deploy Frontend to Vercel
 
-### Method 1: Using Vercel CLI (Recommended)
+> **Note:** If you have proxy issues preventing GitHub access, see `DEPLOY_WITHOUT_GITHUB.md` for solutions including direct deployment without GitHub.
+
+### Method 1: Using Vercel CLI (Recommended - Works Without GitHub!)
 
 1. Install Vercel CLI:
    ```bash
