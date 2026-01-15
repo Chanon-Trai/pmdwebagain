@@ -33,21 +33,19 @@ Choose one platform:
 
 ## 🎨 Step 2: Deploy Frontend to Vercel
 
-> **Proxy/GitHub Issues?** See `DEPLOY_WITHOUT_GITHUB.md` for direct deployment without GitHub!
-
-### Using Vercel CLI (Works Without GitHub!)
-- [ ] Install: `npm install -g vercel`
-- [ ] Login: `vercel login`
-- [ ] Deploy: `vercel` (then `vercel --prod`)
-- [ ] Set environment variable: `NEXT_PUBLIC_API_URL` = your backend URL
-- [ ] **No GitHub needed!** This uploads directly from your local folder.
-
-### Using Vercel Dashboard (Requires GitHub)
+### Using Vercel Dashboard (Recommended)
 - [ ] Go to [vercel.com](https://vercel.com)
 - [ ] Import GitHub repository
 - [ ] Framework: Next.js (auto-detected)
+- [ ] Root Directory: `.` (root - default)
 - [ ] Add environment variable: `NEXT_PUBLIC_API_URL` = your backend URL
 - [ ] Deploy
+
+### Using Vercel CLI (Alternative)
+- [ ] Install: `npm install -g vercel`
+- [ ] Login: `vercel login`
+- [ ] Deploy: `vercel` (then `vercel --prod`)
+- [ ] Set environment variable: `vercel env add NEXT_PUBLIC_API_URL`
 
 ## 🔄 Step 3: Update Backend CORS
 
@@ -81,5 +79,5 @@ FRONTEND_URL=https://your-app.vercel.app
 
 ## 🆘 Need Help?
 
-See `VERCEL_DEPLOYMENT.md` for detailed instructions.
+See `DEPLOYMENT_GUIDE.md` for complete step-by-step instructions.
 
